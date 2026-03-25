@@ -20,8 +20,11 @@ This repository contains the complete RTL-to-GDSII implementation of a 16-bit up
 7. **Sign-off:** Performed timing analysis to ensure zero setup/hold violations.
 
 ##  Results & Visuals
-*(Note: Upload your layout screenshots to your repo and link them here!)*
-* [Insert link to Layout Screenshot here]
-* **Timing:** Met target frequency with positive setup and hold slack.
-* **Area:** [Insert total area from report if you have it]
-* **Power:** [Insert total power from report if you have it]
+###  Technical Documentation
+For a comprehensive breakdown of the design constraints, synthesis results, and final physical verification (DRC/LVS), please refer to the full project report:
+[Download Technical Report (PDF)](REPORT.pdf)
+### Final Layout
+  ![Physical Layout Screenshot](layout.png)
+* **Timing:** Met target frequency with positive setup and hold slack = 0.23.
+* **Area:** 143.08
+* **Power:** 6.81e+08 pW 
