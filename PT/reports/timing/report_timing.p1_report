@@ -1,0 +1,54 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min_max
+	-nosplit
+	-input_pins
+	-nets
+	-slack_lesser_than 0.000000
+	-max_paths 1
+	-sort_by slack
+Design : updown_counter
+Version: W-2024.09
+Date   : Tue Jun  3 11:29:42 2025
+****************************************
+
+
+  Startpoint: COUNT_reg[0] (rising edge-triggered flip-flop clocked by Clock)
+  Endpoint: COUNT_reg[0] (rising edge-triggered flip-flop clocked by Clock)
+  Path Group: Clock
+  Path Type: min
+
+  Point                               Fanout       Incr       Path
+  -----------------------------------------------------------------------
+  clock Clock (rise edge)                      0.000000   0.000000
+  clock network delay (ideal)                  0.000000   0.000000
+  COUNT_reg[0]/CLK (DFFX1_RVT)                 0.000000   0.000000 r
+  COUNT_reg[0]/QN (DFFX1_RVT)                  0.039882 & 0.039882 f
+  n34 (net)                              1 
+  U45/A4 (AO22X1_RVT)                          0.000002 & 0.039884 f
+  U45/Y (AO22X1_RVT)                           0.020145 & 0.060030 f
+  n19 (net)                              1 
+  copt_h_inst_1115/A (NBUFFX2_RVT)             0.000003 & 0.060033 f
+  copt_h_inst_1115/Y (NBUFFX2_RVT)             0.016216 & 0.076249 f
+  copt_net_5 (net)                       1 
+  COUNT_reg[0]/D (DFFX1_RVT)                   0.000004 & 0.076253 f
+  data arrival time                                       0.076253
+
+  clock Clock (rise edge)                      0.000000   0.000000
+  clock network delay (ideal)                  0.000000   0.000000
+  COUNT_reg[0]/CLK (DFFX1_RVT)                            0.000000 r
+  clock reconvergence pessimism                0.000000   0.000000
+  clock uncertainty                            0.100000   0.100000
+  library hold time                            0.001539   0.101539
+  data required time                                      0.101539
+  -----------------------------------------------------------------------
+  data required time                                      0.101539
+  data arrival time                                       -0.076253
+  -----------------------------------------------------------------------
+  slack (VIOLATED)                                        -0.025286
+
+
+No paths with slack less than 0.000000.
+
+1

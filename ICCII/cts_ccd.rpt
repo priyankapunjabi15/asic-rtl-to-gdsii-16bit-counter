@@ -1,0 +1,146 @@
+[icc2-lic Tue Jun  3 11:17:54 2025] Command 'report_clock_qor' requires licenses
+[icc2-lic Tue Jun  3 11:17:54 2025] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Tue Jun  3 11:17:54 2025] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Tue Jun  3 11:17:54 2025] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Tue Jun  3 11:17:54 2025] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Tue Jun  3 11:17:54 2025] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Tue Jun  3 11:17:54 2025] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Tue Jun  3 11:17:54 2025] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Tue Jun  3 11:17:54 2025] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Tue Jun  3 11:17:54 2025] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Tue Jun  3 11:17:54 2025] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Tue Jun  3 11:17:54 2025] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Tue Jun  3 11:17:54 2025] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Tue Jun  3 11:17:54 2025] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Tue Jun  3 11:17:54 2025] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Tue Jun  3 11:17:54 2025] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Tue Jun  3 11:17:54 2025] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Tue Jun  3 11:17:54 2025] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Tue Jun  3 11:17:54 2025] Check-out of alternate set of keys directly with queueing was successful
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+****************************************
+Report : clock qor
+        -type summary
+        -show_verbose_paths
+Design : updown_counter
+Version: W-2024.09
+Date   : Tue Jun  3 11:17:54 2025
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+==========================================
+==== Summary Reporting for Corner nom ====
+==========================================
+
+============================================================= Summary Table for Corner nom =============================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: func::nom
+Clock                                   M,D        16      3        2      6.35      6.35      0.07      0.00         1         0     79.28
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                         16      3        2      6.35      6.35      0.07      0.00         1         0     79.28
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 2 largest datapoints per clock / skew group (L=largest, S=smallest)
+============================================ Details Table for Corner nom ============================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: func::nom
+Clock
+                                   L   COUNT_reg[12]/CLK                  0.07 r      0.07 r        --          --
+                                   L   COUNT_reg[11]/CLK                  0.07 r      0.07 r        --          --
+
+
+Legends for CTS Tags Column
+===========================
+
+clk        =  master clock source point
+gclk       =  generated clock source point
+sink       =  default sinks of clock for CTS, not user defined balance points
+icg        =  input of an ICG
+bal        =  user defined clock balance point
+e_ign      =  user defined explicit ignore point
+i_ign      =  CTS derived implicit ignore point
+trans      =  transition violation
+cap        =  capacitance violation
+dt_lib     =  library specified dont_touch on cell
+dt_cell    =  set_dont_touch on cell
+dt_net     =  set_dont_touch on net
+dt_mv_cell =  MV derived dont_touch on cell
+dt_mv_net  =  MV derived dont_touch on net
+dt_subtree =  dont_touch_subtree derived dont_touch
+hier       =  on hierarchy boundary or inside physical hierarchy
+
+=====================================
+==== Path Reports for Corner nom ====
+=====================================
+Reporting paths for 2 largest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : func
+Corner              : nom
+Scenario            : func::nom
+Skew Group          : default_Clock
+Clock Fanout        : Clock
+Clock at Sink       : Clock
+Sink                : COUNT_reg[12]/CLK
+Latency             : 0.07
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path          Location          NDR                     Layers              CTS Tags
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  Clock (in)                                        1      1.27    0.50    0.00    0.00 r    (0.14,14.86)      default                          0             clk,trans
+  ctosc_drc_inst_1110/A (NBUFFX4_RVT)                              0.50    0.00    0.00 r    (3.80,17.31)                                       0                 trans
+  ctosc_drc_inst_1110/Y (NBUFFX4_RVT)               1      1.88    0.11    0.03    0.03 r    (4.46,17.21)      default                          0                      
+  ctosc_drc_inst_995/A (NBUFFX8_RVT)                               0.11    0.00    0.03 r    (6.91,15.44)                                       0                      
+  ctosc_drc_inst_995/Y (NBUFFX8_RVT)               16     17.41    0.04    0.04    0.07 r    (7.96,15.54)      default            {M2 31} {M3 30}                      
+  COUNT_reg[12]/CLK (DFFX1_RVT)                                    0.04    0.00    0.07 r    (20.51,9.86)                         {M2 31} {M3 30}                  sink
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  total clock latency                                                              0.07
+
+
+---------------------------------------------
+Largest Path #2
+Mode                : func
+Corner              : nom
+Scenario            : func::nom
+Skew Group          : default_Clock
+Clock Fanout        : Clock
+Clock at Sink       : Clock
+Sink                : COUNT_reg[11]/CLK
+Latency             : 0.07
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path          Location          NDR                     Layers              CTS Tags
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  Clock (in)                                        1      1.27    0.50    0.00    0.00 r    (0.14,14.86)      default                          0             clk,trans
+  ctosc_drc_inst_1110/A (NBUFFX4_RVT)                              0.50    0.00    0.00 r    (3.80,17.31)                                       0                 trans
+  ctosc_drc_inst_1110/Y (NBUFFX4_RVT)               1      1.88    0.11    0.03    0.03 r    (4.46,17.21)      default                          0                      
+  ctosc_drc_inst_995/A (NBUFFX8_RVT)                               0.11    0.00    0.03 r    (6.91,15.44)                                       0                      
+  ctosc_drc_inst_995/Y (NBUFFX8_RVT)               16     17.41    0.04    0.04    0.07 r    (7.96,15.54)      default            {M2 31} {M3 30}                      
+  COUNT_reg[11]/CLK (DFFX1_RVT)                                    0.04    0.00    0.07 r    (20.51,9.52)                         {M2 31} {M3 30}                  sink
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  total clock latency                                                              0.07
+
+
+1

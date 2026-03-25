@@ -1,0 +1,61 @@
+GNU gdb (GDB) Rocky Linux 8.2-20.el8.0.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+Attaching to process 8304
+[New LWP 8305]
+[New LWP 8306]
+[New LWP 8309]
+[New LWP 8313]
+[New LWP 8314]
+[New LWP 8315]
+[New LWP 8316]
+[New LWP 8317]
+[New LWP 8318]
+[New LWP 8319]
+[New LWP 8320]
+[New LWP 8321]
+[New LWP 8322]
+[New LWP 8323]
+[New LWP 8324]
+[New LWP 8325]
+[New LWP 8326]
+[New LWP 8336]
+[New LWP 8337]
+[New LWP 8338]
+[New LWP 8339]
+[New LWP 8340]
+[New LWP 8341]
+[New LWP 8342]
+[New LWP 8427]
+[New LWP 8428]
+[New LWP 8429]
+[New LWP 8430]
+[New LWP 8431]
+[New LWP 8432]
+[New LWP 8433]
+[New LWP 8434]
+[New LWP 8435]
+[New LWP 8436]
+[New LWP 8437]
+[New LWP 8438]
+[New LWP 8439]
+[New LWP 8466]
+[New LWP 8489]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+Missing separate debuginfos, use: yum debuginfo-install bzip2-libs-1.0.6-26.el8.x86_64 dbus-libs-1.12.8-26.el8.x86_64 expat-2.2.5-13.el8_10.x86_64 file-libs-5.33-26.el8.x86_64 glib2-2.56.4-164.el8.x86_64 glibc-2.28-251.el8_10.2.x86_64 gmp-6.1.2-12.el8.x86_64 gnutls-3.6.16-8.el8_10.2.x86_64 graphite2-1.3.10-10.el8.x86_64 gsm-1.0.17-5.el8.x86_64 jbigkit-libs-2.1-14.el8.x86_64 keyutils-libs-1.5.10-9.el8.x86_64 krb5-libs-1.18.2-27.el8_10.x86_64 libICE-1.0.9-15.el8.x86_64 libSM-1.2.3-1.el8.x86_64 libX11-1.6.8-8.el8.x86_64 libX11-xcb-1.6.8-8.el8.x86_64 libXScrnSaver-1.2.3-1.el8.x86_64 libXau-1.0.9-3.el8.x86_64 libXcomposite-0.4.4-14.el8.x86_64 libXext-1.3.4-1.el8.x86_64 libXfixes-5.0.3-7.el8.x86_64 libXft-2.3.3-1.el8.x86_64 libXrender-0.9.10-7.el8.x86_64 libXtst-1.2.3-7.el8.x86_64 libasyncns-0.8-14.el8.x86_64 libblkid-2.32.1-46.el8.x86_64 libcom_err-1.45.6-5.el8.x86_64 libgcrypt-1.8.5-7.el8_6.x86_64 libmount-2.32.1-46.el8.x86_64 libogg-1.3.2-10.el8.x86_64 libselinux-2.9-8.el8.x86_64 libsndfile-1.0.28-14.el8.x86_64 libtasn1-4.13-4.el8_7.x86_64 libunistring-0.9.9-3.el8.x86_64 libuuid-2.32.1-46.el8.x86_64 libvorbis-1.3.6-2.el8.x86_64 libxcb-1.13.1-1.el8.x86_64 libzstd-1.4.4-1.el8.x86_64 lz4-libs-1.8.3-3.el8_4.x86_64 ncurses-libs-6.1-10.20180224.el8.x86_64 nettle-3.4.1-7.el8.x86_64 numactl-libs-2.0.16-4.el8.x86_64 pcre-8.42-6.el8.x86_64 pulseaudio-libs-14.0-4.el8.x86_64 pulseaudio-libs-glib2-14.0-4.el8.x86_64 sqlite-libs-3.26.0-19.el8_9.x86_64 systemd-libs-239-82.el8.x86_64
+(gdb) (gdb) (gdb) (gdb) (gdb) Detaching from program: /home/synopsys_install/prime/W-2024.09/linux64/syn/bin/pt_shell_exec, process 8304
+[Inferior 1 (process 8304) detached]
+(gdb) 
